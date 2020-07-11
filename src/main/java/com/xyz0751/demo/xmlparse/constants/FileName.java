@@ -1,5 +1,8 @@
 package com.xyz0751.demo.xmlparse.constants;
 
+/**
+ * @author YY
+ */
 public class FileName {
     private FileName() {}
 

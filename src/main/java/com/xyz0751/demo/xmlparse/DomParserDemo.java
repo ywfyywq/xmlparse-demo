@@ -27,8 +27,8 @@ import java.io.InputStream;
  * 		①通常需要加载整个XML文档来构造层次结构，消耗资源大。
  * @author YY
  */
-public class DOMParserDemo {
-    private static Logger log = LogManager.getLogger(DOMParserDemo.class);
+public class DomParserDemo {
+    private static Logger log = LogManager.getLogger(DomParserDemo.class);
 
     public static void main(String[] args) throws ParserConfigurationException, IOException, SAXException {
         DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
@@ -60,9 +60,9 @@ public class DOMParserDemo {
             }
         });
 
-        try (InputStream is = Thread.currentThread().getContextClassLoader().getResourceAsStream(FileName.MYBATIS_CONFIGURATION);) {
+        try (InputStream is = Thread.currentThread().getContextClassLoader().getResourceAsStream(FileName.MYBATIS_CONFIGURATION)) {
             if (is == null) {
-                log.error("加载menu.xml失败！");
+                log.error("加载文件失败！");
                 return;
             }
 
