@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!ENTITY writer "Jack Yu">
+<!ENTITY copyright "Copyright www.xyz0751.com">
+
+<!ELEMENT breakfast_menu (food)*>
+<!ELEMENT food (name, price, description, calories)>
+<!ATTLIST food
+        id CDATA #REQUIRED
+        >
+
+<!ELEMENT name      (#PCDATA)>
+<!ELEMENT price    (#PCDATA)>
+<!ELEMENT description (#PCDATA)>
+<!ELEMENT calories    (#PCDATA)>
